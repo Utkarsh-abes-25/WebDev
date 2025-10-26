@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int n,a,b,c,p,m;
-    cout << "enter 4-digit no";
+    cout << "enter 4-digit no : ";
     cin >> n;
     m=n;
     a=n%10;
