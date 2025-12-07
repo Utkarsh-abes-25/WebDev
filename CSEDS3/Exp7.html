@@ -1,99 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navigation Menu Example</title>
-
-  <style>
-    /* Container styling */
-    .container {
-      border: 1px solid black;
-      padding: 10px;
-      width: 800px;
-    }
-
-    /* Header section (block example) */
-    .header {
-      background-color: #ccc;
-      padding: 5px;
-    }
-
-    .header h4 {
-      text-align: center;
-      color: black;
-      margin: 0;
-    }
-
-    .header span {
-      color: red;
-      font-weight: bold;
-    }
-
-    /* Menu1 - Inline-block usage */
-    .menu1 a {
-      display: inline-block;
-      background-color: lightblue;
-      margin: 5px;
-      padding: 5px 10px;
-      text-decoration: none;
-      color: navy;
-      border: 1px solid #999;
-    }
-
-    /* Menu2 - Float usage */
-    .menu2 a {
-      float: left;
-      background-color: lightgreen;
-      margin: 5px;
-      padding: 5px 10px;
-      text-decoration: none;
-      color: darkgreen;
-      border: 1px solid #999;
-    }
-
-    /* Clear float after menu2 */
-    .menu2 {
-      clear: both;
-      display: block;
-      margin-top: 10px;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-
-    h3 {
-      font-weight: normal;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 0;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: lightgray;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            direction: row;
+            list-style: none;
+            gap: 10px;
+        }
+        .li1{
+            color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(160, 196, 227);
+            height: 30px;
+            
+        }
+        .li2{
+            display: flex;
+            background-color: lightgreen;
+            height: 30px;
+            
+            align-items: center;
+            justify-content: center;
+        }
+        .base{
+            border: 3px solid black;
+        }
+    </style>
 </head>
-
-<body>
-  <h3>Output</h3>
-
-  <div class="container">
-    <!-- Header section (Block example) -->
-    <div class="header">
-      <h4>My <span>Website</span> Navigation</h4>
+<body><div class="base">
+    <div class="heading">My&nbsp;<p style="color: red;">Website</p>&nbsp;Navigation
     </div>
-
-    <!-- Menu using inline-block -->
-    <div class="menu1">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <!-- Menu using float and clear -->
-    <div class="menu2">
-      <a href="#">Dashboard</a>
-      <a href="#">Profile</a>
-      <a href="#">Messages</a>
-      <a href="#">Logout</a>
-    </div>
-  </div>
+    <ul>
+        <li class="li1">Home</li>
+        <li class="li1">About</li>
+        <li class="li1">Services</li>
+        <li class="li1">Contact</li>
+    </ul>
+    <ul>
+        <li class="li2">Dashboard</li>
+        <li class="li2">Profile</li>
+        <li class="li2">Messages</li>
+        <li class="li2">Logout</li>
+    </ul>
+    <div>
 </body>
 </html>
+Name: UTKARSH GUPTA<br>
+Adm. No: 2025B15410180

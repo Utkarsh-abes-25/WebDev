@@ -2,86 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Block vs Inline Elements</title>
+  <title>Responsive Product Grid</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 40px;
+      background: #ffffff;
+    }
+
+    
+    .frame {
+      border: 2px solid #000;
+      margin: 20px auto;
+      padding: 30px 10px 40px;
+      max-width: 1200px;
+      background: #f3f3f3;
     }
 
     h1 {
-      margin-bottom: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
     }
 
-    .wrapper {
-      display: flex;
-      justify-content: center;
-      gap: 80px;
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0 10px;
     }
 
-    .block-container {
-      border: 2px solid #5c7bff;
-      padding: 20px 30px;
-      border-radius: 8px;
+    .product-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .block-box {
-      border: 2px solid #5c7bff;
-      padding: 20px 50px;
-      margin: 10px 0;
-      border-radius: 6px;
+    .product-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
 
-   
-    .inline-container {
-      border: 2px solid #f2a13b;
-      padding: 20px 30px;
-      border-radius: 8px;
-      display: inline-block;
-    }
-
-    .inline-box {
-      border: 2px solid #f2a13b;
-      padding: 20px 35px;
-      margin: 0 10px;
-      border-radius: 6px;
-      display: inline-block; 
-    }
-
-    .label {
-      margin-top: 15px;
+    .product-title {
       font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .product-price {
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    
+    @media (min-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px;
+      }
+    }
+
+    
+    @media (min-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   </style>
 </head>
 <body>
+  <div class="frame">
+    <h1>Responsive Product Grid</h1>
 
-  <h1>Major Versions of HTML</h1>
-
-  <div class="wrapper">
-   
-    <div>
-      <div class="block-container">
-        <div class="block-box">Box 1</div>
-        <div class="block-box">Box 2</div>
-        <div class="block-box">Box 3</div>
-        <div class="block-box">Box 4</div>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-12-07 at 18.14.30_bed91a67.jpg" alt="Product 1">
+        <div class="product-title">Product 1</div>
+        <div class="product-desc">High-quality item with great features.</div>
+        <div class="product-price">₹499</div>
       </div>
-      <div class="label">Block-Level Element</div>
-    </div>
 
-    
-    <div>
-      <div class="inline-container">
-        <span class="inline-box">Box 1</span>
-        <span class="inline-box">Box 2</span>
-        <span class="inline-box">Box 3</span>
-        <span class="inline-box">Box 4</span>
+      
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-12-07 at 18.14.30_18137903.jpg" alt="Product 2">
+        <div class="product-title">Product 2</div>
+        <div class="product-desc">Durable and stylish for daily use.</div>
+        <div class="product-price">₹799</div>
       </div>
-      <div class="label">Inline Element</div>
+
+      
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-12-07 at 18.14.30_352dfda9.jpg" alt="Product 3">
+        <div class="product-title">Product 3</div>
+        <div class="product-desc">Lightweight and comfortable.</div>
+        <div class="product-price">₹1,299</div>
+      </div>
+
+      
+      <div class="product-card">
+        <img src="WhatsApp Image 2025-12-07 at 18.14.31_93c55764.jpg" alt="Product 4">
+        <div class="product-title">Product 4</div>
+        <div class="product-desc">Trendy design with premium quality.</div>
+        <div class="product-price">₹999</div>
+      </div>
     </div>
   </div>
-
 </body>
 </html>
+Name: UTKARSH GUPTA<br>
+Adm. No: 2025B15410180
