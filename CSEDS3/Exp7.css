@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 0;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: lightgray;
+            font-size: 20px;
+        }
+        ul{
+            display: flex;
+            direction: row;
+            list-style: none;
+            gap: 10px;
+        }
+        .li1{
+            color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(160, 196, 227);
+            height: 30px;
+            
+        }
+        .li2{
+            display: flex;
+            background-color: lightgreen;
+            height: 30px;
+            
+            align-items: center;
+            justify-content: center;
+        }
+        .base{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body><div class="base">
+    <div class="heading">My&nbsp;<p style="color: red;">Website</p>&nbsp;Navigation
+    </div>
+    <ul>
+        <li class="li1">Home</li>
+        <li class="li1">About</li>
+        <li class="li1">Services</li>
+        <li class="li1">Contact</li>
+    </ul>
+    <ul>
+        <li class="li2">Dashboard</li>
+        <li class="li2">Profile</li>
+        <li class="li2">Messages</li>
+        <li class="li2">Logout</li>
+    </ul>
+    <div>
+</body>
+</html>
+Name: UTKARSH GUPTA<br>
+Adm. No: 2025B15410180
